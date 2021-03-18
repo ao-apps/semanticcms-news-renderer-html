@@ -23,7 +23,6 @@
 package com.semanticcms.news.renderer.html;
 
 import com.aoindustries.html.any.AnyDIV;
-import com.aoindustries.html.any.AnyDocument;
 import com.aoindustries.html.any.AnyNAV;
 import com.aoindustries.html.any.AnyPalpableContent;
 import com.semanticcms.core.controller.CapturePage;
@@ -193,14 +192,11 @@ final public class NewsHtmlRenderer {
 	}
 
 	/**
-	 * @param  <__>  {@link AnyPalpableContent} provides both {@link AnyNAV} and {@link AnyDIV}.
+	 * @param  content  {@link AnyPalpableContent} provides both {@link AnyNAV} and {@link AnyDIV}.
 	 */
-	public static <
-		D extends AnyDocument<D>,
-		__ extends AnyPalpableContent<D, __>
-	> void writeNewsImpl(
+	public static void writeNewsImpl(
 		HttpServletRequest request,
-		__ content,
+		AnyPalpableContent<?, ?> content,
 		ElementContext context,
 		News news,
 		PageIndex pageIndex
