@@ -22,9 +22,9 @@
  */
 package com.semanticcms.news.renderer.html;
 
-import com.aoindustries.html.any.AnyDIV;
-import com.aoindustries.html.any.AnyNAV;
-import com.aoindustries.html.any.AnyPalpableContent;
+import com.aoapps.html.any.AnyDIV;
+import com.aoapps.html.any.AnyNAV;
+import com.aoapps.html.any.AnyPalpableContent;
 import com.semanticcms.core.controller.CapturePage;
 import com.semanticcms.core.controller.PageRefResolver;
 import com.semanticcms.core.controller.SemanticCMS;
