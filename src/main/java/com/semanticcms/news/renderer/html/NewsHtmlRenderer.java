@@ -48,7 +48,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.lang3.NotImplementedException;
 
-final public class NewsHtmlRenderer {
+public final class NewsHtmlRenderer {
 
 	// TODO: This should be in the servlet implementation, not in the renderer.  May be able to simplify dependencies.
 	public static void doBodyImpl(
