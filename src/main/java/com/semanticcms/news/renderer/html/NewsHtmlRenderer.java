@@ -20,6 +20,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with semanticcms-news-renderer-html.  If not, see <https://www.gnu.org/licenses/>.
  */
+
 package com.semanticcms.news.renderer.html;
 
 import com.aoapps.html.any.AnyDIV;
