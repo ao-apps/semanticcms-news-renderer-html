@@ -58,10 +58,10 @@ public final class NewsHtmlRenderer {
 
   // TODO: This should be in the servlet implementation, not in the renderer.  May be able to simplify dependencies.
   public static void doBodyImpl(
-    ServletContext servletContext,
-    HttpServletRequest request,
-    HttpServletResponse response,
-    News news
+      ServletContext servletContext,
+      HttpServletRequest request,
+      HttpServletResponse response,
+      News news
   ) throws ServletException, IOException {
     // Get the current capture state
     final CaptureLevel captureLevel = CurrentCaptureLevel.getCaptureLevel(request);
@@ -85,11 +85,11 @@ public final class NewsHtmlRenderer {
           targetPageRef = currentPageRef;
         } else {
           targetPageRef = PageRefResolver.getPageRef(
-            servletContext,
-            request,
-            null,
-            null,
-            news.getTargetPage()
+              servletContext,
+              request,
+              null,
+              null,
+              news.getTargetPage()
           );
         }
       } else {
@@ -97,11 +97,11 @@ public final class NewsHtmlRenderer {
           throw new ServletException("page required when book provided.");
         }
         targetPageRef = PageRefResolver.getPageRef(
-          servletContext,
-          request,
-          news.getDomain(),
-          news.getBook(),
-          news.getTargetPage()
+            servletContext,
+            request,
+            news.getDomain(),
+            news.getBook(),
+            news.getTargetPage()
         );
       }
       final BookRef targetBookRef = targetPageRef.getBookRef();
@@ -118,12 +118,12 @@ public final class NewsHtmlRenderer {
         if (!SemanticCMS.getInstance(servletContext).getBook(targetBookRef).isAccessible()) {
           targetPage = null;
         } else if (
-          // Short-cut for element already added above within current page
-          targetPageRef.equals(currentPageRef)
-          && (
-            newsElement == null
-            || currentPage.getElementsById().containsKey(newsElement)
-          )
+            // Short-cut for element already added above within current page
+            targetPageRef.equals(currentPageRef)
+                && (
+                newsElement == null
+                    || currentPage.getElementsById().containsKey(newsElement)
+            )
         ) {
           targetPage = currentPage;
         } else {
@@ -133,11 +133,11 @@ public final class NewsHtmlRenderer {
             throw new NotImplementedException("Forward reference to element in same page not supported yet");
           }
           targetPage = CapturePage.capturePage(
-            servletContext,
-            request,
-            response,
-            targetPageRef,
-            newsElement == null ? CaptureLevel.PAGE : CaptureLevel.META
+              servletContext,
+              request,
+              response,
+              targetPageRef,
+              newsElement == null ? CaptureLevel.PAGE : CaptureLevel.META
           );
         }
         // Find the optional target element, may remain null when in missing book
@@ -213,11 +213,11 @@ public final class NewsHtmlRenderer {
    * @param  content  {@link AnyPalpableContent} provides both {@link AnyNAV} and {@link AnyDIV}.
    */
   public static void writeNewsImpl(
-    HttpServletRequest request,
-    AnyPalpableContent<?, ?> content,
-    ElementContext context,
-    News news,
-    PageIndex pageIndex
+      HttpServletRequest request,
+      AnyPalpableContent<?, ?> content,
+      ElementContext context,
+      News news,
+      PageIndex pageIndex
   ) throws ServletException, IOException {
     Page page = news.getPage();
     // Write table of contents before this, if needed on the page
