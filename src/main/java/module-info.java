@@ -34,4 +34,4 @@ module com.semanticcms.news.renderer.html {
   requires com.semanticcms.core.renderer.html; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId>
   requires com.semanticcms.news.model; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId>
   requires com.semanticcms.section.renderer.html; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-renderer-html</artifactId>
-}
+} // TODO: Avoiding rewrite-maven-plugin-4.22.2 truncation
