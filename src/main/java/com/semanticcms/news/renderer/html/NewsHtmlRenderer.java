@@ -49,6 +49,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.lang3.NotImplementedException;
 
+/**
+ * Writes news body HTML.
+ */
 public final class NewsHtmlRenderer {
 
   /** Make no instances. */
@@ -56,7 +59,12 @@ public final class NewsHtmlRenderer {
     throw new AssertionError();
   }
 
-  // TODO: This should be in the servlet implementation, not in the renderer.  May be able to simplify dependencies.
+  /**
+   * Writes news body HTML.
+   * <p>
+   * TODO: This should be in the servlet implementation, not in the renderer.  May be able to simplify dependencies.
+   * </p>
+   */
   public static void doBodyImpl(
       ServletContext servletContext,
       HttpServletRequest request,
@@ -210,6 +218,8 @@ public final class NewsHtmlRenderer {
   }
 
   /**
+   * Writes news HTML.
+   *
    * @param  content  {@link AnyPalpableContent} provides both {@link AnyNAV} and {@link AnyDIV}.
    */
   public static void writeNewsImpl(
