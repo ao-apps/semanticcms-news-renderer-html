@@ -36,15 +36,15 @@ along with semanticcms-news-renderer-html.  If not, see <https://www.gnu.org/lic
     <module.name>com.semanticcms.news.renderer.html.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>semanticcms-news-renderer-html</documented.artifactId>
-    <documented.name>SemanticCMS News Renderer HTML²</documented.name>
+    <documented.name>SemanticCMS News Renderer HTML</documented.name>
     <documented.description>SemanticCMS newsfeeds rendered as HTML in a Servlet environment.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>SemanticCMS News Renderer HTML² Book</name>
+  <name>SemanticCMS News Renderer HTML Book</name>
   <url>https://semanticcms.com/news/renderer/html/</url>
-  <description>Documentation for SemanticCMS News Renderer HTML² in SemanticCMS format.</description>
+  <description>Documentation for SemanticCMS News Renderer HTML in SemanticCMS format.</description>
   <inceptionYear>2016</inceptionYear>
 
   <licenses>
