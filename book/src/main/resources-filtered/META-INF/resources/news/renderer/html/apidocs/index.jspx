@@ -39,5 +39,6 @@ along with semanticcms-news-renderer-html.  If not, see <https://www.gnu.org/lic
     shortTitle="API Docs"
     datePublished="2017-08-26T17:25:01-05:00"
     dateModified="${ao:getLastModified('index.html')}"
+    allowRobots="false"
   />
 </jsp:root>
