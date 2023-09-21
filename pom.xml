@@ -39,7 +39,7 @@ along with semanticcms-news-renderer-html.  If not, see <https://www.gnu.org/lic
     <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a>
 / <a target="${javadoc.target}" href="https://semanticcms.com/news/">News</a>
 / <a target="${javadoc.target}" href="${project.url}">Renderer HTML</a>]]></javadoc.breadcrumbs>
-    
+
     <description.html><![CDATA[<a target="${javadoc.target}" href="https://semanticcms.com/news/">SemanticCMS newsfeeds</a> rendered as HTML in a Servlet environment.]]></description.html>
     <!-- TODO: Implement tests -->
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
