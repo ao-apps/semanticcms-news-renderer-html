@@ -1,6 +1,6 @@
 /*
  * semanticcms-news-renderer-html - SemanticCMS newsfeeds rendered as HTML in a Servlet environment.
- * Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022, 2023  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -61,9 +61,8 @@ public final class NewsHtmlRenderer {
 
   /**
    * Writes news body HTML.
-   * <p>
-   * TODO: This should be in the servlet implementation, not in the renderer.  May be able to simplify dependencies.
-   * </p>
+   *
+   * <p>TODO: This should be in the servlet implementation, not in the renderer.  May be able to simplify dependencies.</p>
    */
   public static void doBodyImpl(
       ServletContext servletContext,
