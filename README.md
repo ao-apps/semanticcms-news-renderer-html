@@ -23,7 +23,7 @@
 * [Project Home](https://semanticcms.com/news/renderer/html/)
 * [Changelog](https://semanticcms.com/news/renderer/html/changelog)
 * [API Docs](https://semanticcms.com/news/renderer/html/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-news-renderer-html)
+* [Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-news-renderer-html)
 * [GitHub](https://github.com/ao-apps/semanticcms-news-renderer-html)
 
 ## Contact Us
