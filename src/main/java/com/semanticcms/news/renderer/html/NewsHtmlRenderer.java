@@ -1,6 +1,6 @@
 /*
  * semanticcms-news-renderer-html - SemanticCMS newsfeeds rendered as HTML in a Servlet environment.
- * Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -42,11 +42,11 @@ import com.semanticcms.core.renderer.html.LinkRenderer;
 import com.semanticcms.core.renderer.html.PageIndex;
 import com.semanticcms.news.model.News;
 import com.semanticcms.section.renderer.html.SectionHtmlRenderer;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.lang3.NotImplementedException;
 
 /**
